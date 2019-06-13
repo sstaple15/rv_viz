@@ -66,6 +66,12 @@
   </div>
   <div class = 'container-fluid' style = 'max-width:1200px'>
     <div class = 'row'>
+      <svg id="barPerm" width="700" height="500"></svg>
+      <script>d3.csv("barPerm.csv").then(d => rvChart(d, "Number of Visas", "Permanent Visa Admissions by Type, 2017", "#barPerm"))</script>
+    </div>
+  </div>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <div class = 'row'>
       <svg id="lineAdmits" width="700" height="500"></svg>
       <script>d3.json("lineAdmits.json").then(d => rvLine(d, "Number of Visas", "Annual Spousal and Fiance Visas (Immigrant and Non-Immigrant), 2005-2017", "#lineAdmits"))</script>
     </div>
@@ -94,6 +100,16 @@
   </div>
   <div class = 'container-fluid' style = 'max-width:1200px'>
     <div class = 'row'>
+      <svg id="choro2" width="700" height="500"></svg>
+      <script>Promise.all([
+        d3.csv("statesdata2.csv"),
+        d3.json("https://d3js.org/us-10m.v1.json")
+      ]).then(data => testChor2(data[0], data[1], "K-1 Visa Admissions (per 100,000) by Destination State, 2017"))
+      </script>
+    </div>
+  </div>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <div class = 'row'>
       <svg id="histAge" width="700" height="500"></svg>
       <script>d3.csv("histData.csv").then(d => rvHist(d, "Frequency", "Age Distribution of RapidVisa Sponsors and Applicants, 2014-2019", "#histAge", "100"))</script>
     </div>
@@ -111,6 +127,7 @@
 <script src='rvHist.js'></script>
 <script src='rvHist2.js'></script>
 <script src="testChor.js"></script>
+<script src="testChor2.js"></script>
 
 </body>
 

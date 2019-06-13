@@ -1,9 +1,9 @@
-function testChor(data, us, title) {
+function testChor2(data, us, title) {
 
   var lowColor = '#FFFFF0';
   var highColor = "#447d9c";
 
-  var svg = d3.select("#choro"),
+  var svg = d3.select("#choro2"),
   margin = {top: 50, right: 25, bottom: 50, left: 75},
   width = +svg.attr("width") - margin.left - margin.right,
   height = +svg.attr("height") - margin.top - margin.bottom,
@@ -91,7 +91,7 @@ function testChor(data, us, title) {
   // add a legend
   var w = 140, h = 250;
 
-  var key = d3.select("#choro")
+  var key = d3.select("#choro2")
     .append("g")
     .attr("width", w)
     .attr("height", h)

@@ -70,6 +70,15 @@ function rvLine3(data, axisName, title, plot) {
     .x(d => x(d.date))
     .y(d => y(d.count));
 
+  var tip = d3.tip()
+    .attr('class', 'd3-tip')
+    .offset([-5, 0])
+    .html(function(d) {
+      return "Annual Total: " + d3.format(",")(d.count);
+    });
+
+  svg.call(tip);
+
   let lines = g.append("g")
     .attr("class", "lines")
 
@@ -98,7 +107,6 @@ function rvLine3(data, axisName, title, plot) {
 					.style('opacity', circleOpacity);
       d3.select(this)
         .style("stroke-width", lineStroke)
-        .style("cursor", "none");
     });
 
   lines.selectAll("circle-group")
@@ -109,22 +117,8 @@ function rvLine3(data, axisName, title, plot) {
   .data(d => d.values).enter()
   .append("g")
   .attr("class", "circle")
-  .on("mouseover", function(d) {
-      d3.select(this)
-        .style("cursor", "pointer")
-        .append("text")
-        .attr("class", "text")
-        .text(d3.format(",")(`${d.count}`))
-        .attr("x", d => x(d.date)-15)
-        .attr("y", d => y(d.count)-15);
-    })
-  .on("mouseout", function(d) {
-      d3.select(this)
-        .style("cursor", "none")
-        .transition()
-        .duration(150)
-        .selectAll(".text").remove();
-    })
+  .on('mouseover', tip.show)
+  .on('mouseout', tip.hide)
   .append("circle")
   .attr("cx", d => x(d.date))
   .attr("cy", d => y(d.count))
@@ -156,7 +150,7 @@ function rvLine3(data, axisName, title, plot) {
     .attr("y", height + margin.bottom/1.25)
     .attr("text-anchor", "end")
     .style("font-style", "italic")
-    .text("Source: RapidVisa and USCIS")
+    .text("Source: US Citizenship and Immigration Services")
 
   g.selectAll("myLegend")
     .data(data)

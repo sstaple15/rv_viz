@@ -63,24 +63,18 @@ function rvChart(data, axisName, title, plot) {
     return height - y(Number(d.count));
   });
 
-  // create tooltip
-  tip = d3.tip()
-      .attr('class', 'hovtip')
-      .offset([40, 0])
-      .direction('n')
-      .html(function (d) {
-        text = d3.format(",")(d.count);
-        return text;
-  });
+  var tip = d3.tip()
+    .attr('class', 'd3-tip')
+    .offset([-5, 0])
+    .html(function(d) {
+      return "Annual: " + d3.format(",")(d.count);
+    });
+
   svg.call(tip);
 
   d3.selectAll('.bar')
-    .on('mouseover', function(d) {
-      tip.show(d, this);
-    })
-    .on('mouseout', function(d) {
-      tip.hide(d, this);
-    })
+  .on('mouseover', tip.show)
+  .on('mouseout', tip.hide);
 
   g.append("text")
     .attr("x", 0)
@@ -94,6 +88,6 @@ function rvChart(data, axisName, title, plot) {
     .attr("y", height + margin.bottom/1.25)
     .attr("text-anchor", "end")
     .style("font-style", "italic")
-    .text("Source: RapidVisa and USCIS")
+    .text("Source: US Citizenship and Immigration Services")
 
 };

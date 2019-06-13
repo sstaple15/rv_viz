@@ -29,6 +29,13 @@ function rvHist(data, axisName, title, plot, maxout) {
   g.append("g")
   .attr("transform", "translate(0," + height + ")")
   .call(d3.axisBottom(x))
+    .append("text")
+    .attr("fill", "#000")
+    .attr("y", -15)
+    .attr("x", 575)
+    .attr("dy", "0.71em")
+    .attr("text-anchor", "center")
+    .text("Age");
 
   g.append("g")
   .call(d3.axisLeft(y))
@@ -77,32 +84,22 @@ function rvHist(data, axisName, title, plot, maxout) {
     .style("fill", "#447d9c")
     .style("opacity", 0.7)
 
-  // create tooltip
-  tip1 = d3.tip()
-      .attr('class', 'hovtip')
-      .offset([40, 0])
-      .direction('n')
-      .html(function (d) {
-        text = d.length;
-        return text;
-  });
-  g.call(tip1);
+  var tip = d3.tip()
+    .attr('class', 'd3-tip')
+    .offset([-5, 0])
+    .html(function(d) {
+      return "Frequency: " + d3.format(",")(d.length);
+    });
+
+  svg.call(tip);
 
   d3.selectAll('.bar1')
-    .on('mouseover', function(d) {
-      tip1.show(d, this);
-    })
-    .on('mouseout', function(d) {
-      tip1.hide(d, this);
-    })
+  .on('mouseover', tip.show)
+  .on('mouseout', tip.hide);
 
   d3.selectAll('.bar2')
-    .on('mouseover', function(d) {
-      tip1.show(d, this);
-    })
-    .on('mouseout', function(d) {
-      tip1.hide(d, this);
-    })
+  .on('mouseover', tip.show)
+  .on('mouseout', tip.hide);
 
   g.append("text")
     .attr("x", 0)
