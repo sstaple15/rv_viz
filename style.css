@@ -1,0 +1,151 @@
+body {
+	background-color: #ffffff !important;
+	color: #606060 !important;
+}
+
+p {
+	margin-bottom: 0 !important;
+	font-weight: bold;
+}
+
+.bar {
+	fill: #447d9c;
+}
+
+.bar:hover {
+	fill: #38a25e;
+}
+
+.footer{
+	font-size: 10px;
+	font-style: italic;
+}
+
+#hist {
+	display: flex;
+}
+
+.notbold {
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.background {
+  fill: none;
+  pointer-events: all;
+}
+
+.slider-selection {
+	background: #ffffff;
+}
+
+.container-fluid {
+  padding-right: 30px;
+  padding-left: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.counties {
+  stroke-width: 0.25;
+  opacity: 1 ;
+}
+
+.active {
+	opacity: 0.75;
+}
+
+.counties.active {
+  stroke-width:1.5;
+	stroke: black;
+	opacity: 0.5;
+  pointer-events: all;
+}
+
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1;
+  stroke-linejoin: round;
+ /* to avoid error reading on state lines */
+	/* pointer-events: none; */
+}
+
+#tooltip-container {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border: 1px solid;
+  display: none;
+}
+
+.tooltip_key {
+  font-weight: bold;
+}
+
+.tooltip_value {
+  margin-left: 20px;
+  float: right;
+}
+
+.states-choropleth {
+	fill: #ccc
+}
+
+.hovtip {
+  font-family: 'Sarif';
+  line-height: 1.25;
+  font-size: 14px;
+  padding: 6px;
+  background: #fff;
+  color: #38a25e;
+	border-color: #000;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.searchbar {
+  margin: 0 auto;
+}
+
+#searchbar {
+  font-family: 'Sarif';
+  width: 500px;
+  padding: 6px;
+  margin: 6px 6px 6px 6px;
+  border-radius: 4px;
+  border: 2px solid #000;
+}
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+#reset {
+	font-family: 'Sarif';
+	width: 75px;
+	padding: 6px;
+	margin: 6px 6px 6px 6px;
+	border-radius: 4px;
+	border: 2px solid #000;
+}
+
+text {
+  fill: #000;
+  font-family: 'Sarif';
+	font-size: 12px;
+}
+
+.line {
+  stroke-width: 3;
+  fill: none;
+}

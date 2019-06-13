@@ -1,0 +1,92 @@
+[
+  {
+    "group": "Philippines",
+    "values": [
+      {"date": "2005", "count": 4423},
+      {"date": "2006", "count": 4532},
+      {"date": "2007", "count": 6198},
+      {"date": "2008", "count": 4857},
+      {"date": "2009", "count": 5261},
+      {"date": "2010", "count": 5730},
+      {"date": "2011", "count": 4369},
+      {"date": "2012", "count": 4967},
+      {"date": "2013", "count": 5131},
+      {"date": "2014", "count": 7009},
+      {"date": "2015", "count": 6852},
+      {"date": "2016", "count": 6723},
+      {"date": "2017", "count": 6909}
+    ]
+  },
+  {
+    "group": "Vietnam",
+    "values": [
+      {"date": "2005", "count": 3690},
+      {"date": "2006", "count": 3095},
+      {"date": "2007", "count": 2105},
+      {"date": "2008", "count": 1661},
+      {"date": "2009", "count": 970},
+      {"date": "2010", "count": 599},
+      {"date": "2011", "count": 804},
+      {"date": "2012", "count": 867},
+      {"date": "2013", "count": 774},
+      {"date": "2014", "count": 1436},
+      {"date": "2015", "count": 1432},
+      {"date": "2016", "count": 1921},
+      {"date": "2017", "count": 1980}
+    ]
+  },
+  {
+    "group": "China",
+    "values": [
+      {"date": "2005", "count": 2223},
+      {"date": "2006", "count": 2228},
+      {"date": "2007", "count": 2339},
+      {"date": "2008", "count": 2005},
+      {"date": "2009", "count": 1894},
+      {"date": "2010", "count": 1897},
+      {"date": "2011", "count": 1347},
+      {"date": "2012", "count": 1586},
+      {"date": "2013", "count": 1397},
+      {"date": "2014", "count": 1933},
+      {"date": "2015", "count": 1481},
+      {"date": "2016", "count": 1447},
+      {"date": "2017", "count": 1189}
+    ]
+  },
+  {
+    "group": "Ukraine",
+    "values": [
+      {"date": "2005", "count": 1095},
+      {"date": "2006", "count": 851},
+      {"date": "2007", "count": 891},
+      {"date": "2008", "count": 674},
+      {"date": "2009", "count": 686},
+      {"date": "2010", "count": 745},
+      {"date": "2011", "count": 626},
+      {"date": "2012", "count": 674},
+      {"date": "2013", "count": 698},
+      {"date": "2014", "count": 1011},
+      {"date": "2015", "count": 798},
+      {"date": "2016", "count": 887},
+      {"date": "2017", "count": 767}
+    ]
+  },
+  {
+    "group": "Russia",
+    "values": [
+      {"date": "2005", "count": 1372},
+      {"date": "2006", "count": 1358},
+      {"date": "2007", "count": 1272},
+      {"date": "2008", "count": 885},
+      {"date": "2009", "count": 758},
+      {"date": "2010", "count": 688},
+      {"date": "2011", "count": 603},
+      {"date": "2012", "count": 602},
+      {"date": "2013", "count": 693},
+      {"date": "2014", "count": 859},
+      {"date": "2015", "count": 558},
+      {"date": "2016", "count": 596},
+      {"date": "2017", "count": 589}
+    ]
+  }
+]

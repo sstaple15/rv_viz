@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rapid Visa K1 Report</title>
+  <link rel='stylesheet' href='./style.css' />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<!-- d3 links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.6.0/d3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/2.2.0/topojson.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+
+<body>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <div class = 'row'>
+      <h1 class = 'title'>Rapid Visa K1 Report</h1>
+      <ul></ul>
+    </div>
+  </div>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <div class = 'row'>
+      <h1 class = 'title'>Introduction</h1>
+      <p class = 'notbold'>RapidVisa is providing evidence-based reporting on the US Visa regime, with special emphasis on the visas in which we work most. For this inaugural report, RapidVisa has culled through multiple datasets—both those provided by the US Government as well as our own proprietary data—to examine trends of K1 visa applications. More specifically, we examine both macro application trends and more granular statistics related to destinations, occupations and demographics of applicants and sponsors.  Several interesting trends emerge as vestiges of the visa’s origins. More broadly, this report is intended to shed light on a topic that is frequently misunderstood and poorly reported.
+      </p1>
+    </div>
+  </div>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <div class = 'row'>
+      <h1 class = 'title'>Key Findings</h1>
+    </div>
+    <div class = 'row'>
+      <ul>
+        <li>The K1 visa is an important bridge to immigrant status for fiances of U.S. citizens</li>
+        <li>Annual K1 entries into the United States are lower than the daily average attendance at a New York Yankees baseball game</li>
+        <li>Filipinos make up a large and growing portion of K1 visa entrants</li>
+        <li>Most K1 entrants go to populous U.S. states like California, Florida, New York, and Texas</li>
+        <li>The average K1 sponsor is a white male in his early 40’s</li>
+        <li>The average K1 applicat is a woman in her late 20's</li>
+      </ul>
+    </div>
+    <div class = 'row'>
+      <h1 class = 'title'>The K1 Visa: A Brief Background</h1>
+    </div>
+    <div class = 'row'>
+      <h2>What is a K-type visa?</h2>
+    </div>
+    <div class = 'row'>
+      <p class = 'notbold'>K type visas were created to eliminate unnecessary family separations resulting from delays in immigrant visa adjudication for foreign fiancés and/or spouses (and family members of fiancés or spouses). K-type visas are nonimmigrant visas, whose designees are distinguished by law as nonimmigrants who intend to permanently immigrate.</p>
+    </div>
+  </div>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <div class = 'row'>
+      <svg id="stadiums" width="700" height="500"></svg>
+      <script>d3.csv("stadiums.csv").then(d => rvChart(d, "Number of People", "Annual K-1 Visas Compared to Sport Stadium Daily Attendance, 2017", "#stadiums"))</script>
+    </div>
+  </div>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <div class = 'row'>
+      <svg id="barAdmits" width="700" height="500"></svg>
+      <script>d3.csv("barAdmits.csv").then(d => rvChart(d, "Number of Visas", "Nonimmigrant Visa Admissions by Type, 2017", "#barAdmits"))</script>
+    </div>
+  </div>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <div class = 'row'>
+      <svg id="lineAdmits" width="700" height="500"></svg>
+      <script>d3.json("lineAdmits.json").then(d => rvLine(d, "Number of Visas", "Annual Spousal and Fiance Visas (Immigrant and Non-Immigrant), 2005-2017", "#lineAdmits"))</script>
+    </div>
+  </div>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <div class = 'row'>
+      <svg id="lineEastern" width="700" height="500"></svg>
+      <script>d3.json("lineEastern.json").then(d => rvLine2(d, "Number of Visas", "K-1 Visa Admissions by Country of Citizenship, 2005-2017", "#lineEastern"))</script>
+    </div>
+  </div>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <div class = 'row'>
+      <svg id="lineWestern" width="700" height="500"></svg>
+      <script>d3.json("lineWestern.json").then(d => rvLine3(d, "Number of Visas", "K-1 Visa Admissions by Country of Citizenship, 2005-2017", "#lineWestern"))</script>
+    </div>
+  </div>
+  </div>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <div class = 'row'>
+      <svg id="histAge" width="700" height="500"></svg>
+      <script>d3.csv("histData.csv").then(d => rvHist(d, "Frequency", "Age Distribution of RapidVisa Sponsors and Applicants, 2014-2019", "#histAge", "100"))</script>
+    </div>
+  </div>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <svg id="histIncome" width="700" height="500"></svg>
+    <script>d3.csv("histData.csv").then(d => rvHist2(d, "Frequency", "Income Distribution of RapidVisa Sponsors, 2014-2019", "#histIncome", "500000"))</script>
+  </div>
+
+<!-- contents -->
+<script src='rvChart.js'></script>
+<script src='rvLine.js'></script>
+<script src='rvLine2.js'></script>
+<script src='rvLine3.js'></script>
+<script src='rvHist.js'></script>
+<script src='rvHist2.js'></script>
+
+</body>
+
+</html>

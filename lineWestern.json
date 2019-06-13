@@ -1,0 +1,92 @@
+[
+  {
+    "group": "Mexico",
+    "values": [
+      {"date": "2005", "count": 1368},
+      {"date": "2006", "count": 1314},
+      {"date": "2007", "count": 1589},
+      {"date": "2008", "count": 1452},
+      {"date": "2009", "count": 1493},
+      {"date": "2010", "count": 1717},
+      {"date": "2011", "count": 1309},
+      {"date": "2012", "count": 1567},
+      {"date": "2013", "count": 1268},
+      {"date": "2014", "count": 1799},
+      {"date": "2015", "count": 1386},
+      {"date": "2016", "count": 1747},
+      {"date": "2017", "count": 1617}
+    ]
+  },
+  {
+    "group": "United Kingdom",
+    "values": [
+      {"date": "2005", "count": 957},
+      {"date": "2006", "count": 880},
+      {"date": "2007", "count": 895},
+      {"date": "2008", "count": 793},
+      {"date": "2009", "count": 789},
+      {"date": "2010", "count": 941},
+      {"date": "2011", "count": 884},
+      {"date": "2012", "count": 918},
+      {"date": "2013", "count": 841},
+      {"date": "2014", "count": 1380},
+      {"date": "2015", "count": 1125},
+      {"date": "2016", "count": 1279},
+      {"date": "2017", "count": 1221}
+    ]
+  },
+  {
+    "group": "Dominican Republic",
+    "values": [
+      {"date": "2005", "count": 918},
+      {"date": "2006", "count": 401},
+      {"date": "2007", "count": 569},
+      {"date": "2008", "count": 2009},
+      {"date": "2009", "count": 771},
+      {"date": "2010", "count": 931},
+      {"date": "2011", "count": 749},
+      {"date": "2012", "count": 960},
+      {"date": "2013", "count": 863},
+      {"date": "2014", "count": 1480},
+      {"date": "2015", "count": 1175},
+      {"date": "2016", "count": 1950},
+      {"date": "2017", "count": 1678}
+    ]
+  },
+  {
+    "group": "Brazil",
+    "values": [
+      {"date": "2005", "count": 425},
+      {"date": "2006", "count": 524},
+      {"date": "2007", "count": 673},
+      {"date": "2008", "count": 557},
+      {"date": "2009", "count": 517},
+      {"date": "2010", "count": 529},
+      {"date": "2011", "count": 466},
+      {"date": "2012", "count": 484},
+      {"date": "2013", "count": 415},
+      {"date": "2014", "count": 612},
+      {"date": "2015", "count": 553},
+      {"date": "2016", "count": 680},
+      {"date": "2017", "count": 875}
+    ]
+  },
+  {
+    "group": "Haiti",
+    "values": [
+      {"date": "2005", "count": 294},
+      {"date": "2006", "count": 170},
+      {"date": "2007", "count": 646},
+      {"date": "2008", "count": 481},
+      {"date": "2009", "count": 512},
+      {"date": "2010", "count": 820},
+      {"date": "2011", "count": 554},
+      {"date": "2012", "count": 603},
+      {"date": "2013", "count": 422},
+      {"date": "2014", "count": 593},
+      {"date": "2015", "count": 606},
+      {"date": "2016", "count": 1274},
+      {"date": "2017", "count": 933}
+    ]
+  }
+]
