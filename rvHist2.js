@@ -32,7 +32,7 @@ function rvHist2(data, axisName, title, plot, maxout) {
   .append("text")
   .attr("fill", "#000")
   .attr("y", -15)
-  .attr("x", 570)
+  .attr("x", 565)
   .attr("dy", "0.71em")
   .attr("text-anchor", "center")
   .text("Income ($USD)");
