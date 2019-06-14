@@ -16,6 +16,7 @@
 
 <!-- contents -->
 <script src='rvChart.js'></script>
+<script src='rvChart2.js'></script>
 <script src='rvLine.js'></script>
 <script src='rvLine2.js'></script>
 <script src='rvLine3.js'></script>
@@ -129,7 +130,7 @@
   <div class = 'container-fluid' style = 'max-width:1200px'>
     <div class = 'row'>
       <svg id="barPerm" width="700" height="500"></svg>
-      <script>d3.csv("barPerm.csv").then(d => rvChart(d, "Number of Visas", "Permanent Visa Admissions by Type, 2017", "#barPerm"))</script>
+      <script>d3.csv("barPerm.csv").then(d => rvChart2(d, "Number of Visas", "Permanent Visa Admissions by Type, 2017", "#barPerm"))</script>
     </div>
   </div>
   <div class = 'container-fluid' style = 'max-width:1200px'>

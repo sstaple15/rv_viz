@@ -18,10 +18,21 @@ p {
 
 .bar {
 	fill: #447d9c;
+	opacity: 0.85;
+}
+
+.bar4 {
+	opacity: 0.85;
 }
 
 .bar:hover {
 	fill: #38a25e;
+	opacity: 1;
+}
+
+.bar4:hover {
+	fill: #38a25e;
+	opacity: 1;
 }
 
 .footer{
