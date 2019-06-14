@@ -35,7 +35,7 @@ function rvHist2(data, axisName, title, plot, maxout) {
   .attr("x", 575)
   .attr("dy", "0.71em")
   .attr("text-anchor", "center")
-  .text("Age");
+  .text("Income ($USD)");
 
   g.append("g")
   .call(d3.axisLeft(y))
