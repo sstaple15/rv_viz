@@ -84,6 +84,7 @@ function rvHist(data, axisName, title, plot, maxout) {
     .style("fill", "#447d9c")
     .style("opacity", 0.7)
 
+
   var tip = d3.tip()
     .attr('class', 'd3-tip')
     .offset([-5, 0])
@@ -92,6 +93,28 @@ function rvHist(data, axisName, title, plot, maxout) {
     });
 
   svg.call(tip);
+
+  var w1 = 100;
+  var h1 = 100;
+  g.append("g")
+    .attr("width", w1)
+    .attr("height", h1);
+
+  g.append("line")
+    .attr("x1", 212.5)
+    .attr("y1", 400)
+    .attr("x2", 212.5)
+    .attr("y2", 75)
+    .attr("stroke-width", 2)
+    .attr("stroke", "black")
+
+  g.append("text")
+    .attr("x", 220)
+    .attr("y", 85)
+    .attr("text-anchor", "begin")
+    .style("font-weight", "bold")
+    .attr("dy", "0em")
+    .text("US Median")
 
   d3.selectAll('.bar1')
   .on('mouseover', tip.show)
@@ -115,10 +138,10 @@ function rvHist(data, axisName, title, plot, maxout) {
     .style("font-style", "italic")
     .text("Source: RapidVisa and USCIS")
 
-  g.append("circle").attr("cx", width-2*margin.right).attr("cy",30).attr("r", 6).style("fill", "#38a25e")
-  g.append("circle").attr("cx", width-2*margin.right).attr("cy",60).attr("r", 6).style("fill", "#447d9c")
-  g.append("text").attr("x", width-2*margin.right+20).attr("y", 30).text("Sponsors").style("font-size", "14px").attr("alignment-baseline","middle")
-  g.append("text").attr("x", width-2*margin.right+20).attr("y", 60).text("Applicants").style("font-size", "14px").attr("alignment-baseline","middle")
+  g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",30).attr("r", 6).style("fill", "#38a25e")
+  g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",60).attr("r", 6).style("fill", "#447d9c")
+  g.append("text").attr("x", width-3.5*margin.right+20).attr("y", 30).text("Sponsors").style("font-size", "14px").attr("alignment-baseline","middle")
+  g.append("text").attr("x", width-3.5*margin.right+20).attr("y", 60).text("Applicants").style("font-size", "14px").attr("alignment-baseline","middle")
 
 
 };

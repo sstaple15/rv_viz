@@ -19,11 +19,12 @@
 <script src='rvLine.js'></script>
 <script src='rvLine2.js'></script>
 <script src='rvLine3.js'></script>
+<script src='rvLine4.js'></script>
 <script src='rvHist.js'></script>
 <script src='rvHist2.js'></script>
 <script src="testChor.js"></script>
 <script src="testChor2.js"></script>
-  
+
 <body>
   <div class = 'container-fluid' style = 'max-width:1200px'>
     <div class = 'row'>
@@ -147,6 +148,12 @@
     <div class = 'row'>
       <svg id="lineWestern" width="700" height="500"></svg>
       <script>d3.json("lineWestern.json").then(d => rvLine3(d, "Number of Visas", "K-1 Visa Admissions by Country of Citizenship, 2005-2017", "#lineWestern"))</script>
+    </div>
+  </div>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <div class = 'row'>
+      <svg id="lineDeny" width="700" height="500"></svg>
+      <script>d3.json("lineDeny.json").then(d => rvLine4(d, "Number of Decisions", "I-129F Approval and Denials by Quarter, 2015-2017", "#lineDeny"))</script>
     </div>
   </div>
   <div class = 'container-fluid' style = 'max-width:1200px'>

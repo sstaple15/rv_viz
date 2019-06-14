@@ -33,7 +33,7 @@ function rvChart(data, axisName, title, plot) {
   .attr("dy", "0.71em")
   .attr("text-anchor", "end")
   .text(axisName);
-
+  
   // gridlines in y axis function
   function make_y_gridlines() {
       return d3.axisLeft(y)

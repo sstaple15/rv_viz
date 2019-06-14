@@ -32,7 +32,7 @@ function rvHist2(data, axisName, title, plot, maxout) {
   .append("text")
   .attr("fill", "#000")
   .attr("y", -15)
-  .attr("x", 565)
+  .attr("x", 560)
   .attr("dy", "0.71em")
   .attr("text-anchor", "center")
   .text("Income ($USD)");
@@ -93,6 +93,28 @@ function rvHist2(data, axisName, title, plot, maxout) {
     });
 
   svg.call(tip);
+
+  var w1 = 100;
+  var h1 = 100;
+  g.append("g")
+    .attr("width", w1)
+    .attr("height", h1);
+
+  g.append("line")
+    .attr("x1", 72.5)
+    .attr("y1", 400)
+    .attr("x2", 72.5)
+    .attr("y2", 75)
+    .attr("stroke-width", 2)
+    .attr("stroke", "black")
+
+  g.append("text")
+    .attr("x", 80)
+    .attr("y", 85)
+    .attr("text-anchor", "begin")
+    .style("font-weight", "bold")
+    .attr("dy", "0em")
+    .text("US Median")
 
   d3.selectAll('.bar2')
   .on('mouseover', tip.show)
