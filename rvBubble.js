@@ -169,8 +169,8 @@ function rvBubble(data) {
       .attr('r', function (d) { return d.radius; });
   }
 
-  g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",30).attr("r", 6).style("fill", "#38a25e")
-  g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",60).attr("r", 6).style("fill", "#447d9c")
+  g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",30).attr("r", 6).style("fill", "#447d9c")
+  g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",60).attr("r", 6).style("fill", "#38a25e")
   g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",90).attr("r", 6).style("fill", "#f81128")
   g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",120).attr("r", 6).style("fill", "#f18721")
   g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",150).attr("r", 6).style("fill", "#606060")
