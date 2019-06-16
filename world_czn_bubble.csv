@@ -1,0 +1,155 @@
+name,id,region,region-code,value
+Afghanistan,004,Asia,142,237
+Albania,008,Europe,150,170
+Algeria,012,Africa,2,56
+Angola,024,Africa,2,3
+Antigua and Barbuda,028,Americas,19,5
+Argentina,032,Americas,19,100
+Armenia,051,Asia,142,202
+Australia,036,Oceania,9,339
+Austria,040,Europe,150,30
+Azerbaijan,031,Asia,142,17
+Bahamas,044,Americas,19,16
+Bangladesh,050,Asia,142,14
+Barbados,052,Americas,19,6
+Belarus,112,Europe,150,91
+Belgium,056,Europe,150,47
+Belize,084,Americas,19,12
+Benin,204,Africa,2,15
+Bhutan,064,Asia,142,5
+Bolivia,068,Americas,19,37
+Bosnia and Herzegovina,070,Europe,150,158
+Brazil,076,Americas,19,875
+Bulgaria,100,Europe,150,79
+Burkina Faso,854,Africa,2,14
+Burundi,108,Africa,2,8
+Cabo Verde,132,Africa,2,76
+Cambodia,116,Asia,142,487
+Cameroon,120,Africa,2,171
+Canada,124,Americas,19,868
+Chile,152,Americas,19,85
+China,156,Asia,142,1189
+Colombia,170,Americas,19,970
+Congo,178,Africa,2,5
+"Congo, Democratic Republic",180,Africa,2,20
+Costa Rica,188,Americas,19,98
+Cote d'Ivoire,384,Africa,2,50
+Croatia,191,Europe,150,36
+Cuba,192,Americas,19,307
+Cyprus,196,Asia,142,4
+Czechia,203,Europe,150,41
+Denmark,208,Europe,150,26
+Dominica,212,Americas,19,13
+Dominican Republic,214,Americas,19,1678
+Ecuador,218,Americas,19,233
+Egypt,818,Africa,2,266
+El Salvador,222,Americas,19,298
+Eritrea,232,Africa,2,71
+Estonia,233,Europe,150,18
+Ethiopia,231,Africa,2,397
+Fiji,242,Oceania,9,25
+Finland,246,Europe,150,41
+France,250,Europe,150,269
+Gambia,270,Africa,2,35
+Georgia,268,Asia,142,31
+Germany,276,Europe,150,304
+Ghana,288,Africa,2,237
+Greece,300,Europe,150,35
+Grenada,308,Americas,19,12
+Guatemala,320,Americas,19,159
+Guinea,324,Africa,2,42
+Guyana,328,Americas,19,61
+Haiti,332,Americas,19,933
+Honduras,340,Americas,19,262
+Hungary,348,Europe,150,39
+Iceland,352,Europe,150,4
+India,356,Asia,142,791
+Indonesia,360,Asia,142,213
+Iran,364,Asia,142,333
+Iraq,368,Asia,142,231
+Ireland,372,Europe,150,115
+Israel,376,Asia,142,46
+Italy,380,Europe,150,143
+Jamaica,388,Americas,19,381
+Japan,392,Asia,142,420
+Jordan,400,Asia,142,91
+Kazakhstan,398,Asia,142,49
+Kenya,404,Africa,2,165
+South Korea,410,Asia,142,327
+Kuwait,414,Asia,142,3
+Kyrgyzstan,417,Asia,142,26
+Laos,418,Asia,142,497
+Latvia,428,Europe,150,14
+Lebanon,422,Asia,142,136
+Liberia,430,Africa,2,111
+Libya,434,Africa,2,12
+Lithuania,440,Europe,150,19
+Madagascar,450,Africa,2,12
+Malawi,454,Africa,2,5
+Malaysia,458,Asia,142,67
+Mali,466,Africa,2,15
+Mauritania,478,Africa,2,6
+Mauritius,480,Africa,2,6
+Mexico,484,Americas,19,1617
+Moldova,498,Europe,150,56
+Mongolia,496,Asia,142,11
+Montenegro,499,Europe,150,84
+Morocco,504,Africa,2,247
+Mozambique,508,Africa,2,5
+Namibia,516,Africa,2,4
+Nepal,524,Asia,142,139
+Netherlands,528,Europe,150,149
+New Caledonia,540,Oceania,9,98
+New Zealand,554,Oceania,9,98
+Nicaragua,558,Americas,19,165
+Niger,562,Africa,2,5
+Nigeria,566,Africa,2,728
+Norway,578,Europe,150,44
+Pakistan,586,Asia,142,330
+Panama,591,Americas,19,39
+Paraguay,600,Americas,19,23
+Peru,604,Americas,19,381
+Philippines,608,Asia,142,6909
+Poland,616,Europe,150,128
+Portugal,620,Europe,150,37
+Romania,642,Europe,150,162
+Russia,643,Europe,150,589
+Rwanda,646,Africa,2,28
+Saint Kitts and Nevis,659,Americas,19,6
+Saint Lucia,662,Americas,19,11
+Saint Vincent and the Grenadines,670,Americas,19,9
+Saudi Arabia,682,Asia,142,9
+Senegal,686,Africa,2,46
+Serbia,688,Europe,150,84
+Sierra Leone,694,Africa,2,120
+Singapore,702,Asia,142,37
+Slovakia,703,Europe,150,16
+Slovenia,705,Europe,150,6
+Somalia,706,Africa,2,39
+South Africa,710,Africa,2,133
+South Sudan,728,Africa,2,29
+Spain,724,Europe,150,143
+Sri Lanka,144,Asia,142,29
+Sudan,729,Africa,2,23
+Suriname,740,Americas,19,4
+Sweden,752,Europe,150,107
+Switzerland,756,Europe,150,24
+Taiwan,158,Asia,142,139
+Tajikistan,762,Asia,142,12
+Tanzania,834,Africa,2,29
+Thailand,764,Asia,142,616
+Togo,768,Africa,2,45
+Tonga,776,Oceania,9,7
+Trinidad and Tobago,780,Americas,19,73
+Tunisia,788,Africa,2,62
+Turkey,792,Asia,142,151
+Turkmenistan,795,Asia,142,4
+Uganda,800,Africa,2,58
+Ukraine,804,Europe,150,767
+United Kingdom,826,Europe,150,1221
+Uruguay,858,Americas,19,14
+Uzbekistan,860,Asia,142,47
+Venezuela,862,Americas,19,245
+Yemen,887,Asia,142,42
+Zambia,894,Africa,2,9
+Zimbabwe,716,Africa,2,19
