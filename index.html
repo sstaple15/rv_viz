@@ -20,6 +20,7 @@
 <!-- contents -->
 <script src='rvChart.js'></script>
 <script src='rvChart2.js'></script>
+<script src='rvChart3.js'></script>
 <script src='rvLine.js'></script>
 <script src='rvLine2.js'></script>
 <script src='rvLine3.js'></script>
@@ -30,6 +31,7 @@
 <script src="testChor2.js"></script>
 <script src="testChor3.js"></script>
 <script src="rvBubble.js"></script>
+<script src="rvBubble2.js"></script>
 
 <body>
   <div class = 'container-fluid' style = 'max-width:1200px'>
@@ -129,7 +131,7 @@
   <div class = 'container-fluid' style = 'max-width:1200px'>
     <div class = 'row'>
       <svg id="barAdmits" width="700" height="500"></svg>
-      <script>d3.csv("barAdmits.csv").then(d => rvChart(d, "Number of Visas", "Nonimmigrant Visa Admissions by Type, 2017", "#barAdmits"))</script>
+      <script>d3.csv("barAdmits.csv").then(d => rvChart3(d, "Number of Visas", "Nonimmigrant Visa Admissions by Type, 2017", "#barAdmits"))</script>
     </div>
   </div>
   <div class = 'container-fluid' style = 'max-width:1200px'>
@@ -197,19 +199,28 @@
       <svg id="bubble" width="700" height="500"></svg>
       <script>Promise.all([
         d3.csv("world_czn_bubble.csv")
-      ]).then(data => rvBubble(data))
+      ]).then(data => rvBubble(data, "All K1 Visa Admissions by Region, 2017", "#bubble"))
+      </script>
+    </div>
+  </div>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <div class = 'row'>
+      <svg id="bubble2" width="700" height="500"></svg>
+      <script>Promise.all([
+        d3.csv("rv_czn_bubble.csv")
+      ]).then(data => rvBubble2(data, "RapidVisa K1 Visa Applicants by Region, 2014-2017", "#bubble2"))
       </script>
     </div>
   </div>
   <div class = 'container-fluid' style = 'max-width:1200px'>
     <div class = 'row'>
       <svg id="histAge" width="700" height="500"></svg>
-      <script>d3.csv("histData.csv").then(d => rvHist(d, "Frequency", "Age Distribution of RapidVisa Sponsors and Applicants, 2014-2019", "#histAge", "100"))</script>
+      <script>d3.csv("histData.csv").then(d => rvHist(d, "Number of Applicants /Sponsors", "Age Distribution of RapidVisa Sponsors and Applicants, 2014-2019", "#histAge", "100"))</script>
     </div>
   </div>
   <div class = 'container-fluid' style = 'max-width:1200px'>
     <svg id="histIncome" width="700" height="500"></svg>
-    <script>d3.csv("histData.csv").then(d => rvHist2(d, "Frequency", "Income Distribution of RapidVisa Sponsors, 2014-2019", "#histIncome", "500000"))</script>
+    <script>d3.csv("histData.csv").then(d => rvHist2(d, "Number of Sponsors", "Income Distribution of RapidVisa Sponsors, 2014-2019", "#histIncome", "500000"))</script>
   </div>
 
 </body>

@@ -1,4 +1,4 @@
-function rvChart(data, axisName, title, plot) {
+function rvChart3(data, axisName, title, plot) {
 
   var svg = d3.select(plot),
   margin = {top: 50, right: 25, bottom: 50, left: 75},
@@ -89,5 +89,27 @@ function rvChart(data, axisName, title, plot) {
     .attr("text-anchor", "end")
     .style("font-style", "italic")
     .text("Source: US Citizenship and Immigration Services")
+
+  //arrow
+  g.append("g:defs").append("g:marker")
+      .attr("id", "triangle")
+      .attr("refX", 6)
+      .attr("refY", 6)
+      .attr("markerWidth", 30)
+      .attr("markerHeight", 30)
+      .attr("orient", "auto")
+      .append("path")
+      .attr("d", "M 0 0 12 6 0 12 3 6")
+      .style("fill", "black");
+
+  //line
+  g.append("line")
+    .attr("x1", 17.5)
+    .attr("y1", 360)
+    .attr("x2", 17.5)
+    .attr("y2", 385)
+    .attr("stroke-width", 1)
+    .attr("stroke", "black")
+    .attr("marker-end", "url(#triangle)");
 
 };

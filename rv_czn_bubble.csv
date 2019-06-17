@@ -1,0 +1,154 @@
+name,id,region,region-code,value,value
+Afghanistan,004,Asia,142,237,4
+Aland Islands,248,Oceania,NA,NA,1
+Albania,008,Europe,150,170,16
+Algeria,012,Africa,2,56,32
+Angola,024,Africa,2,3,1
+Antigua and Barbuda,028,Americas,19,5,2
+Argentina,032,Americas,19,100,19
+Armenia,051,Asia,142,202,7
+Australia,036,Oceania,9,339,59
+Austria,040,Europe,150,30,1
+Azerbaijan,031,Asia,142,17,1
+Bahamas,044,Americas,19,16,1
+Bangladesh,050,Asia,142,14,10
+Barbados,052,Americas,19,6,1
+Belarus,112,Europe,150,91,3
+Belgium,056,Europe,150,47,5
+Belize,084,Americas,19,12,7
+Benin,204,Africa,2,15,2
+Bhutan,064,Asia,142,5,2
+Bolivia,068,Americas,19,37,4
+Bosnia and Herzegovina,070,Europe,NA,NA,4
+Botswana,072,Africa,NA,NA,1
+Brazil,076,Americas,19,875,231
+Bulgaria,100,Europe,150,79,8
+Burundi,108,Africa,2,8,2
+Cambodia,116,Asia,142,487,50
+Cameroon,120,Africa,2,171,12
+Canada,124,Americas,19,868,96
+Cabo Verde,132,Africa,NA,NA,1
+Chad,148,Africa,NA,NA,1
+Chile,152,Americas,19,85,5
+China,156,Asia,142,1189,235
+Colombia,170,Americas,19,970,326
+Cameroon,120,Africa,NA,NA,1
+Costa Rica,188,Americas,19,98,30
+Cote d'Ivoire,384,Africa,NA,NA,8
+Croatia,191,Europe,150,36,4
+Cuba,192,Americas,19,307,68
+Czechia,203,Europe,NA,NA,6
+Democratic Republic of the Congo,180,Africa,NA,NA,2
+Denmark,208,Europe,150,26,7
+Dominica,212,Americas,19,13,2
+Dominican Republic,214,Americas,19,1678,330
+Ecuador,218,Americas,19,233,39
+Egypt,818,Africa,2,266,22
+El Salvador,222,Americas,19,298,24
+Eritrea,232,Africa,2,71,3
+Estonia,233,Europe,150,18,1
+Ethiopia,231,Africa,2,397,40
+Fiji,242,Oceania,9,25,1
+Finland,246,Europe,150,41,4
+France,250,Europe,150,269,25
+Gambia,270,Africa,2,35,7
+Georgia,268,Asia,142,31,2
+Germany,276,Europe,150,304,37
+Ghana,288,Africa,2,237,166
+Greece,300,Europe,150,35,5
+Grenada,308,Americas,19,12,4
+Guatemala,320,Americas,19,159,25
+Guinea,324,Africa,2,42,7
+Guyana,328,Americas,19,61,7
+Haiti,332,Americas,19,933,68
+Honduras,340,Americas,19,262,43
+Hungary,348,Europe,150,39,3
+Iceland,352,Europe,150,4,1
+India,356,Asia,142,791,105
+Indonesia,360,Asia,142,213,87
+Iran,364,Asia,142,333,21
+Iraq,368,Asia,142,231,9
+Ireland,372,Europe,150,115,13
+Israel,376,Asia,142,46,4
+Italy,380,Europe,150,143,12
+Jamaica,388,Americas,19,381,119
+Japan,392,Asia,142,420,43
+Jordan,400,Asia,142,91,11
+Kazakhstan,398,Asia,142,49,9
+Kenya,404,Africa,2,165,43
+South Korea,410,Asia,NA,NA,33
+Kyrgyzstan,417,Asia,142,26,5
+Laos,418,Asia,142,497,23
+Latvia,428,Europe,150,14,2
+Lebanon,422,Asia,142,136,9
+Lesotho,426,Africa,NA,NA,1
+Liberia,430,Africa,2,111,22
+Libya,434,Africa,2,12,2
+Liechtenstein,483,Europe,NA,NA,1
+Lithuania,440,Europe,150,19,1
+Luxembourg,442,Europe,NA,NA,1
+Macedonia,807,Europe,NA,NA,4
+Madagascar,450,Africa,2,12,2
+Malaysia,458,Asia,142,67,3
+Mauritius,480,Africa,2,6,2
+Mexico,484,Americas,19,1617,270
+Moldova,498,Europe,150,56,7
+Mongolia,496,Asia,142,11,3
+Morocco,504,Africa,2,247,83
+Mozambique,508,Africa,2,5,1
+Myanmar,104,Asia,NA,NA,4
+Nepal,524,Asia,142,139,11
+Netherlands,528,Europe,150,149,14
+New Zealand,554,Oceania,9,98,14
+Nicaragua,558,Americas,19,165,29
+Nigeria,566,Africa,2,728,176
+Norway,578,Europe,150,44,7
+Palestine,275,Asia,NA,NA,3
+Pakistan,586,Asia,142,330,58
+Panama,591,Americas,19,39,16
+Paraguay,600,Americas,19,23,4
+Peru,604,Americas,19,381,83
+Philippines,608,Asia,142,6909,3309
+Poland,616,Europe,150,128,12
+Portugal,620,Europe,150,37,6
+Romania,642,Europe,150,162,18
+Russia,643,Europe,150,589,139
+Rwanda,646,Africa,2,28,3
+Saudi Arabia,682,Asia,142,9,3
+Senegal,686,Africa,2,46,5
+Serbia,688,Europe,150,84,9
+Sierra Leone,694,Africa,2,120,11
+Singapore,702,Asia,142,37,2
+Slovakia,703,Europe,150,16,3
+Slovenia,705,Europe,150,6,1
+Somalia,706,Africa,2,39,1
+South Africa,710,Africa,2,133,40
+South Sudan,728,Africa,2,29,4
+Spain,724,Europe,150,143,26
+Sri Lanka,144,Asia,142,29,2
+Sudan,729,Africa,2,23,2
+Suriname,740,Americas,19,4,1
+Sweden,752,Europe,150,107,5
+Switzerland,756,Europe,150,24,3
+Syria,760,Africa,NA,NA,8
+Taiwan,158,Asia,142,139,9
+Tajikistan,762,Asia,142,12,3
+Tanzania,834,Africa,2,29,4
+Thailand,764,Asia,142,616,187
+Togo,768,Africa,2,45,6
+Tonga,776,Oceania,9,7,1
+Trinidad and Tobago,780,Oceania,NA,NA,4
+Tunisia,788,Africa,2,62,18
+Turkey,792,Asia,142,151,14
+Turkmenistan,795,Asia,142,4,3
+Uganda,800,Africa,2,58,13
+Ukraine,804,Europe,150,767,161
+United Arab Emirates,784,Asia,NA,NA,1
+United Kingdom,826,Europe,150,1221,215
+Uruguay,858,Americas,19,14,2
+Uzbekistan,860,Asia,142,47,7
+Venezuela,862,Americas,19,245,116
+Vietnam,704,Asia,NA,NA,140
+Yemen,887,Asia,142,42,1
+Zambia,894,Africa,2,9,3
+Zimbabwe,716,Africa,2,19,2

@@ -1,4 +1,4 @@
-function rvBubble(data, title, plot) {
+function rvBubble2(data, title, plot) {
 
   var svg = d3.select(plot),
   margin = {top: 50, right: 25, bottom: 50, left: 75},
@@ -25,8 +25,8 @@ function rvBubble(data, title, plot) {
       clusterPadding = 6; // separation between different-color nodes
 
   var myScale = d3.scaleLinear()
-    .domain([0, 1000])
-    .range([3, 17]);
+    .domain([0, 500])
+    .range([4, 17]);
 
   var myScale2 = d3.scaleOrdinal()
     .domain(["Africa", "Americas", "Asia", "Europe", "Oceania"])

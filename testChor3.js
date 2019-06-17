@@ -56,7 +56,11 @@ function testChor3(data, us, title) {
 
       var jsonState = featureCollection.features[j].id;
 
-      if (dataState == jsonState) {
+      if (jsonState == -99) {
+        featureCollection.features[j].value = 0;
+      }
+
+      else if (dataState == jsonState) {
 
         // Copy the data value into the JSON
         featureCollection.features[j].value = dataValue;
@@ -66,7 +70,6 @@ function testChor3(data, us, title) {
         break;
       }
     }
-
   };
 
   var tip = d3.tip()

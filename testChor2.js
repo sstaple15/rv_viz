@@ -38,7 +38,7 @@ function testChor2(data, us, title) {
 	var minVal = d3.min(dataArray)
 	var maxVal = d3.max(dataArray)
 	var ramp = d3.scaleLinear()
-    .domain([minVal,maxVal])
+    .domain([4,maxVal])
     .range([lowColor,highColor])
 
       // Loop through each state data value in the .csv file
@@ -140,6 +140,6 @@ function testChor2(data, us, title) {
       .attr("x", -30)
       .attr("dy", "0.71em")
       .attr("text-anchor", "begin")
-      .text("Total Admits");
+      .text("Admits per 100,000");
 
 }
