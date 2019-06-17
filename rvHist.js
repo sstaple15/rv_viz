@@ -130,7 +130,7 @@ function rvHist(data, axisName, title, plot, maxout) {
       .attr("text-anchor", "begin")
       .style("font-weight", "bold")
       .attr("dy", "0em")
-      .text("Sponsor Median")
+      .text("Applicant Median")
 
     g.append("line")
       .attr("x1", 248)
@@ -146,7 +146,7 @@ function rvHist(data, axisName, title, plot, maxout) {
       .attr("text-anchor", "begin")
       .style("font-weight", "bold")
       .attr("dy", "0em")
-      .text("Applicant Median")
+      .text("Sponsor Median")
 
   d3.selectAll('.bar1')
   .on('mouseover', tip.show)
@@ -168,7 +168,7 @@ function rvHist(data, axisName, title, plot, maxout) {
     .attr("y", height + margin.bottom/1.25)
     .attr("text-anchor", "end")
     .style("font-style", "italic")
-    .text("Source: RapidVisa and USCIS")
+    .text("Source: RapidVisa")
 
   g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",30).attr("r", 6).style("fill", "#38a25e")
   g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",60).attr("r", 6).style("fill", "#447d9c")

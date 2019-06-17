@@ -22,7 +22,7 @@ function testChor3(data, us, title) {
     .attr("y", height + margin.bottom/5)
     .attr("text-anchor", "end")
     .style("font-style", "italic")
-    .text("Source: RapidVisa and USCIS")
+    .text("Source: US Citizenship and Immigration Statistics")
 
   var featureCollection = topojson.feature(us, us.objects.countries);
 

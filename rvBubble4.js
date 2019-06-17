@@ -1,4 +1,4 @@
-function rvBubble(data, title, plot) {
+function rvBubble4(data, title, plot) {
 
   var svg = d3.select(plot),
   margin = {top: 50, right: 25, bottom: 50, left: 75},
@@ -19,31 +19,31 @@ function rvBubble(data, title, plot) {
     .attr("y", height + margin.bottom/5)
     .attr("text-anchor", "end")
     .style("font-style", "italic")
-    .text("Source: US Citizenship and Immigration Statistics")
+    .text("Source: RapidVisa")
 
   var padding = 1.5, // separation between same-color nodes
       clusterPadding = 6; // separation between different-color nodes
 
   var myScale = d3.scaleLinear()
-    .domain([0, 1000])
-    .range([3, 17]);
+    .domain([0, 500])
+    .range([3, 40]);
 
   var myScale2 = d3.scaleOrdinal()
     .domain(["Africa", "Americas", "Asia", "Europe", "Oceania"])
     .range([1, 2, 3, 4, 5]);
 
   var n = data[0].length, // total number of nodes
-      m = 5; // number of distinct clusters
+      m = 1; // number of distinct clusters
 
   var color = d3.scaleOrdinal()
     .domain([1, 2, 3, 4, 5])
-    .range(["#447d9c", "#38a25e", "#f81128", "#f18721", "#606060"]);
+    .range(["38a25e", "#447d9c", "#f81128", "#f18721", "#606060"]);
 
   for (var i = 0; i < data[0].length; i++) {
     data[0][i].radius = myScale(data[0][i].value);
-    data[0][i].x = Math.cos(myScale2(data[0][i].region)/m*2*Math.PI)*200 + width/2 + Math.random();
-    data[0][i].y = Math.sin(myScale2(data[0][i].region)/m*2*Math.PI)*200 + height/2 + Math.random();
-    data[0][i].cluster = myScale2(data[0][i].region);
+    data[0][i].x = Math.cos(2*Math.PI)*200 + width/2 + Math.random();
+    data[0][i].y = Math.sin(2*Math.PI)*200 + height/2 + Math.random();
+    data[0][i].cluster = 1;
     // // data[0][i].index = i;
     // var d = {
     //   cluster: data[0][i].j,
@@ -59,9 +59,9 @@ function rvBubble(data, title, plot) {
 
     var i = data[node_counter].cluster,
         r = myScale(data[node_counter].value),
-        name = data[node_counter].name,
+        name = data[node_counter].id,
         value = data[node_counter].value,
-        region = data[node_counter].region,
+        region = data[node_counter].id,
         d = {
           cluster: i,
           radius: r,
@@ -98,14 +98,14 @@ function rvBubble(data, title, plot) {
     .attr('class', 'd3-tip')
     .offset([-5, 0])
     .html(function(d) {
-      return "State: " + d.name + "<br/>Admits: " + d3.format(",")(d.value);
+      return "Occupation: " + d.name + "<br/>Count: " + d3.format(",")(d.value);
     });
 
   svg.call(tip);
 
   var simulation = d3.forceSimulation()
     // keep entire simulation balanced around screen center
-    .force('center', d3.forceCenter(width/2, height/2+50))
+    .force('center', d3.forceCenter(width/2, height/2))
 
     // pull toward center
     .force('attract', d3.forceAttract()
@@ -168,16 +168,5 @@ function rvBubble(data, title, plot) {
       .attr('cy', function (d) { return d.y; })
       .attr('r', function (d) { return d.radius; });
   }
-
-  g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",30).attr("r", 6).style("fill", "#447d9c")
-  g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",60).attr("r", 6).style("fill", "#38a25e")
-  g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",90).attr("r", 6).style("fill", "#f81128")
-  g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",120).attr("r", 6).style("fill", "#f18721")
-  g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",150).attr("r", 6).style("fill", "#606060")
-  g.append("text").attr("x", width-3.5*margin.right+20).attr("y", 30).text("Africa").style("font-size", "14px").attr("alignment-baseline","middle")
-  g.append("text").attr("x", width-3.5*margin.right+20).attr("y", 60).text("Americas").style("font-size", "14px").attr("alignment-baseline","middle")
-  g.append("text").attr("x", width-3.5*margin.right+20).attr("y", 90).text("Asia").style("font-size", "14px").attr("alignment-baseline","middle")
-  g.append("text").attr("x", width-3.5*margin.right+20).attr("y", 120).text("Europe").style("font-size", "14px").attr("alignment-baseline","middle")
-  g.append("text").attr("x", width-3.5*margin.right+20).attr("y", 150).text("Oceania").style("font-size", "14px").attr("alignment-baseline","middle")
 
 }

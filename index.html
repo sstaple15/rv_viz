@@ -33,11 +33,12 @@
 <script src="rvBubble.js"></script>
 <script src="rvBubble2.js"></script>
 <script src="rvBubble3.js"></script>
+<script src="rvBubble4.js"></script>
 
 <body>
   <div class = 'container-fluid' style = 'max-width:1200px'>
     <div class = 'row'>
-      <h1 class = 'title'>Rapid Visa K1 Report</h1>
+      <h1 class = 'title'>Rapid Visa K1 Report Visuals</h1>
       <ul></ul>
     </div>
   </div>
@@ -49,19 +50,6 @@
     </div>
   </div>
   <div class = 'container-fluid' style = 'max-width:1200px'>
-    <div class = 'row'>
-      <h1 class = 'title'>Key Findings</h1>
-    </div>
-    <div class = 'row'>
-      <ul>
-        <li>The K1 visa is an important bridge to immigrant status for fiances of U.S. citizens</li>
-        <li>Annual K1 entries into the United States are lower than the daily average attendance at a New York Yankees baseball game</li>
-        <li>Filipinos make up a large and growing portion of K1 visa entrants</li>
-        <li>Most K1 entrants go to populous U.S. states like California, Florida, New York, and Texas</li>
-        <li>The average K1 sponsor is a white male in his early 40’s</li>
-        <li>The average K1 applicat is a woman in her late 20's</li>
-      </ul>
-    </div>
     <div class = 'row'>
       <style type="text/css">
         .tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
@@ -149,6 +137,22 @@
   </div>
   <div class = 'container-fluid' style = 'max-width:1200px'>
     <div class = 'row'>
+      <svg id="lineDeny" width="700" height="500"></svg>
+      <script>d3.json("lineDeny.json").then(d => rvLine4(d, "Number of Decisions", "I-129F Approval and Denials by Quarter, 2014-2018", "#lineDeny"))</script>
+    </div>
+  </div>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <div class = 'row'>
+      <svg id="choro3" width="700" height="500"></svg>
+      <script>Promise.all([
+        d3.csv("world_czn.csv"),
+        d3.json("https://unpkg.com/world-atlas@1/world/110m.json")
+      ]).then(data => testChor3(data[0], data[1], "K-1 Visa Admission by Country of Citizenship, 2017"))
+      </script>
+    </div>
+  </div>
+  <div class = 'container-fluid' style = 'max-width:1200px'>
+    <div class = 'row'>
       <svg id="lineEastern" width="700" height="500"></svg>
       <script>d3.json("lineEastern.json").then(d => rvLine2(d, "Number of Visas", "K-1 Visa Admissions by Country of Citizenship, 2005-2017", "#lineEastern"))</script>
     </div>
@@ -157,12 +161,6 @@
     <div class = 'row'>
       <svg id="lineWestern" width="700" height="500"></svg>
       <script>d3.json("lineWestern.json").then(d => rvLine3(d, "Number of Visas", "K-1 Visa Admissions by Country of Citizenship, 2005-2017", "#lineWestern"))</script>
-    </div>
-  </div>
-  <div class = 'container-fluid' style = 'max-width:1200px'>
-    <div class = 'row'>
-      <svg id="lineDeny" width="700" height="500"></svg>
-      <script>d3.json("lineDeny.json").then(d => rvLine4(d, "Number of Decisions", "I-129F Approval and Denials by Quarter, 2015-2017", "#lineDeny"))</script>
     </div>
   </div>
   <div class = 'container-fluid' style = 'max-width:1200px'>
@@ -187,12 +185,8 @@
   </div>
   <div class = 'container-fluid' style = 'max-width:1200px'>
     <div class = 'row'>
-      <svg id="choro3" width="700" height="500"></svg>
-      <script>Promise.all([
-        d3.csv("world_czn.csv"),
-        d3.json("https://unpkg.com/world-atlas@1/world/110m.json")
-      ]).then(data => testChor3(data[0], data[1], "K-1 Visa Admission by Country of Citizenship, 2017"))
-      </script>
+      <svg id="histAge" width="700" height="500"></svg>
+      <script>d3.csv("histData.csv").then(d => rvHist(d, "Number of Applicants /Sponsors", "Age Distribution of RapidVisa Sponsors and Applicants, 2014-2018", "#histAge", "100"))</script>
     </div>
   </div>
   <div class = 'container-fluid' style = 'max-width:1200px'>
@@ -209,7 +203,7 @@
       <svg id="bubble2" width="700" height="500"></svg>
       <script>Promise.all([
         d3.csv("rv_czn_bubble.csv")
-      ]).then(data => rvBubble2(data, "RapidVisa K1 Visa Applicants by Region, 2014-2017", "#bubble2"))
+      ]).then(data => rvBubble2(data, "RapidVisa K1 Visa Applicants by Region, 2014-2018", "#bubble2"))
       </script>
     </div>
   </div>
@@ -218,19 +212,22 @@
       <svg id="bubble3" width="700" height="500"></svg>
       <script>Promise.all([
         d3.csv("rv_job_bubble.csv")
-      ]).then(data => rvBubble3(data, "RapidVisa K1 Visa Sponsor Occupations, 2014-2017", "#bubble3"))
+      ]).then(data => rvBubble3(data, "RapidVisa K1 Visa Sponsor Occupations, 2014-2018", "#bubble3"))
       </script>
     </div>
   </div>
   <div class = 'container-fluid' style = 'max-width:1200px'>
     <div class = 'row'>
-      <svg id="histAge" width="700" height="500"></svg>
-      <script>d3.csv("histData.csv").then(d => rvHist(d, "Number of Applicants /Sponsors", "Age Distribution of RapidVisa Sponsors and Applicants, 2014-2019", "#histAge", "100"))</script>
+      <svg id="bubble4" width="700" height="500"></svg>
+      <script>Promise.all([
+        d3.csv("rv_app_bubble.csv")
+      ]).then(data => rvBubble4(data, "RapidVisa K1 Visa Applicant Occupations, 2014-2018", "#bubble4"))
+      </script>
     </div>
   </div>
   <div class = 'container-fluid' style = 'max-width:1200px'>
     <svg id="histIncome" width="700" height="500"></svg>
-    <script>d3.csv("histData.csv").then(d => rvHist2(d, "Number of Sponsors", "Income Distribution of RapidVisa Sponsors, 2014-2019", "#histIncome", "500000"))</script>
+    <script>d3.csv("histData.csv").then(d => rvHist2(d, "Number of Sponsors", "Income Distribution of RapidVisa Sponsors, 2014-2018", "#histIncome", "500000"))</script>
   </div>
 
 </body>

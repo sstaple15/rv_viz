@@ -133,6 +133,6 @@ function rvHist2(data, axisName, title, plot, maxout) {
     .attr("y", height + margin.bottom/1.25)
     .attr("text-anchor", "end")
     .style("font-style", "italic")
-    .text("Source: RapidVisa and USCIS")
+    .text("Source: RapidVisa")
 
 };

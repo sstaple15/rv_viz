@@ -19,7 +19,7 @@ function rvBubble2(data, title, plot) {
     .attr("y", height + margin.bottom/5)
     .attr("text-anchor", "end")
     .style("font-style", "italic")
-    .text("Source: RapidVisa and USCIS")
+    .text("Source: RapidVisa")
 
   var padding = 1.5, // separation between same-color nodes
       clusterPadding = 6; // separation between different-color nodes
