@@ -105,7 +105,7 @@ function rvChart3(data, axisName, title, plot) {
   //line
   g.append("line")
     .attr("x1", 17.5)
-    .attr("y1", 360)
+    .attr("y1", 300)
     .attr("x2", 17.5)
     .attr("y2", 385)
     .attr("stroke-width", 1)

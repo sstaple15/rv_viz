@@ -116,6 +116,38 @@ function rvHist(data, axisName, title, plot, maxout) {
     .attr("dy", "0em")
     .text("US Median")
 
+    g.append("line")
+      .attr("x1", 177)
+      .attr("y1", 400)
+      .attr("x2", 177)
+      .attr("y2", 20)
+      .attr("stroke-width", 2)
+      .attr("stroke", "black")
+
+    g.append("text")
+      .attr("x", 183)
+      .attr("y", 32)
+      .attr("text-anchor", "begin")
+      .style("font-weight", "bold")
+      .attr("dy", "0em")
+      .text("Sponsor Median")
+
+    g.append("line")
+      .attr("x1", 248)
+      .attr("y1", 400)
+      .attr("x2", 248)
+      .attr("y2", 160)
+      .attr("stroke-width", 2)
+      .attr("stroke", "black")
+
+    g.append("text")
+      .attr("x", 255)
+      .attr("y", 170)
+      .attr("text-anchor", "begin")
+      .style("font-weight", "bold")
+      .attr("dy", "0em")
+      .text("Applicant Median")
+
   d3.selectAll('.bar1')
   .on('mouseover', tip.show)
   .on('mouseout', tip.hide);

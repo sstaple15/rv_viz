@@ -1,0 +1,386 @@
+id,value
+9-1-1 Dispatcher,3
+Administrator,3
+Aircraft Technician,3
+Apprentice,3
+Army Officer,3
+Artist,3
+Assistant Professor,3
+Aviation Technician,3
+Banker,3
+Banquet Server,3
+Barber,3
+Building Maintenance,3
+Care Provider,3
+Carrier,3
+Case Manager,3
+CDL Truck Driver,3
+Ceo,3
+Certified Nurse Assist,3
+Certified Nursing Assi,3
+Chemical Operator,3
+City Carrier Assistant,3
+Cleaner,3
+CNC Operator,3
+Computer Operator,3
+Computer Tech,3
+Construction Worker,3
+Controls Engineer,3
+Controls Technician,3
+Correction Officer,3
+CPA,3
+Customer Care,3
+Customer Service Rep.,3
+Data Analyst,3
+Dealer,3
+Deckhand,3
+Design Engineer,3
+Designer,3
+Directional Driller,3
+Director Of Sales,3
+DJ,3
+Dock Worker,3
+Electrical Technician,3
+Electronic Technician,3
+Facility Supervisor,3
+Field Supervisor,3
+Flooring Installer,3
+Hairdresser,3
+Helper,3
+HVAC Technician,3
+Insurance Adjuster,3
+Interpreter,3
+IT,3
+IT Support,3
+Java Developer,3
+Landscape Designer,3
+Landscaper,3
+Lawyer,3
+Lead Cook,3
+Legal Assistant,3
+Locomotive Engineer,3
+Logistics Analyst,3
+Logistics Manager,3
+LVN,3
+Maintenance Tech,3
+Maintenance Worker,3
+Managing Director,3
+Marine Electrician,3
+Marine Engineer,3
+Marketing,3
+Medical Doctor,3
+Medical Technologist,3
+Mental Health Tech,3
+Mental Health Therapis,3
+Na,3
+Nurse Practitioner,3
+Nursing Assistant,3
+Office Assistant,3
+Online English Teacher,3
+Operations Specialist,3
+Order Selector,3
+OTR Driver,3
+OWNER,3
+Packing,3
+Painting Contractor,3
+Personal Banker,3
+Poker Dealer,3
+Porter,3
+Postal Clerk,3
+Press Operator,3
+Principal Engineer,3
+Probation Officer,3
+Process Technician,3
+Producer,3
+Production Associate,3
+Professor,3
+Quality Manager,3
+Real Estate Appraiser,3
+Regional Manager,3
+Rigger,3
+Sales Specialist,3
+Sanitation,3
+Scientist,3
+Secretary,3
+Security Engineer,3
+Semi Truck Driver,3
+Senior Director,3
+Senior Pastor,3
+Service Tech,3
+Shift Lead,3
+Shift Leader,3
+Shift Supervisor,3
+Shipfitter,3
+Social Worker,3
+Sr. Software Engineer,3
+Stationary Engineer,3
+Subcontractor,3
+Supply Chain,3
+Table Games Dealer,3
+Technical Support,3
+Technical Writer,3
+Tow Truck Driver,3
+Transport Driver,3
+Warehouse Clerk,3
+Air Traffic Controller,4
+Analyst,4
+Assembly,4
+Assistant,4
+Associate,4
+Associate Professor,4
+Blackjack Supervisor,4
+Brand Manager,4
+Bus Operator,4
+Business Analyst,4
+Captain,4
+CDL Driver,4
+Chiropractor,4
+Commercial Driver,4
+Company Driver,4
+Computer Programmer,4
+Computer Technician,4
+Construction,4
+Construction Manager,4
+Crew,4
+Delivery,4
+Electronics Technician,4
+EMT,4
+Engineering Manager,4
+Facility Manager,4
+Field Engineer,4
+Field Service Tech,4
+Financial Analyst,4
+Fleet Service Clerk,4
+Food Service Worker,4
+Funeral Director,4
+Handyman,4
+Heavy Equipment Operat,4
+Home Health Aid,4
+Homemaker,4
+Inside Sales,4
+Inspector,4
+IT Manager,4
+Kitchen Manager,4
+Loan Officer,4
+Logistics Specialist,4
+Manufacturing Engineer,4
+Meat Cutter,4
+MRI Technologist,4
+Nanny,4
+Network Administrator,4
+OTR Truck Driver,4
+Owner/President,4
+Paralegal,4
+Paraprofessional,4
+Pharmacy Tech,4
+Photographer,4
+Production Manager,4
+Production Supervisor,4
+Project Engineer,4
+Real Estate Investor,4
+Receptionist,4
+Sales Supervisor,4
+School Bus Driver,4
+Security Forces,4
+Security Supervisor,4
+Self-Employed,4
+Site Supervisor,4
+Staff,4
+Surgical Technologist,4
+System Engineer,4
+Systems Administrator,4
+Team Lead,4
+Tutor,4
+Union Carpenter,4
+Waitress,4
+Accountant,5
+Business Development,5
+Care Giver,5
+Conductor,5
+Deputy Sheriff,5
+District Manager,5
+Electrical Engineer,5
+Firefighter,5
+Housekeeper,5
+Independent Contractor,5
+Information Technology,5
+Insurance Agent,5
+Management,5
+Massage Therapist,5
+Mechanical Engineer,5
+Package Handler,5
+Packer,5
+Pharmacist,5
+Production Worker,5
+Program Director,5
+Salesman,5
+Senior Engineer,5
+Senior Manager,5
+Service Advisor,5
+Shipping,5
+Substitute Teacher,5
+Teacher Assistant,5
+Therapist,5
+Uber Driver,5
+Warehouse Worker,5
+Web Developer,5
+Worker,5
+Admin Assistant,6
+Agent,6
+Assembler,6
+Civil Engineer,6
+Disability,6
+Dispatcher,6
+Executive Assistant,6
+Field Technician,6
+Hair Stylist,6
+Home Health Aide,6
+Installer,6
+Labor,6
+Letter Carrier,6
+Line Cook,6
+Mail Carrier,6
+Maintenance Manager,6
+Marketing Director,6
+Marketing Manager,6
+Millwright,6
+Partner,6
+President/Owner,6
+Production,6
+Sales Rep,6
+Service Manager,6
+Staff Accountant,6
+Team Member,6
+Attorney,7
+Crew Member,7
+Director Of Operations,7
+Disabled Veteran,7
+Estimator,7
+Executive Director,7
+Farmer,7
+Financial Advisor,7
+Forklift Operator,7
+Housekeeping,7
+Instructor,7
+Material Handler,7
+Merchandiser,7
+Network Engineer,7
+Personal Trainer,7
+RN,7
+Sales Consultant,7
+Security Guard,7
+Stocker,7
+Warehouse,7
+Automotive Technician,8
+Bus Driver,8
+Courier,8
+Crane Operator,8
+Customer Service Agent,8
+Executive Chef,8
+Flight Attendant,8
+Foreman,8
+General Contractor,8
+Graphic Designer,8
+Logistics,8
+Physical Therapist,8
+Program Manager,8
+Real Estate Agent,8
+Real Estate Broker,8
+Restaurant Manager,8
+Transportation,8
+Warehouse Manager,8
+Clerk,9
+Finance Manager,9
+Laborer,9
+NULL,9
+Quality Inspector,9
+Ramp Agent,9
+System Administrator,9
+Warehouse Associate,9
+Account Manager,10
+Assistant Manager,10
+CSR,10
+Field Service Engineer,10
+IT Specialist,10
+Maintenance Supervisor,10
+Military,10
+Software Engineer,10
+Systems Engineer,10
+Contractor,11
+Equipment Operator,11
+Maintenance Mechanic,11
+Medical Assistant,11
+Superintendent,11
+Maintenance Technician,12
+Office Manager,12
+Professional Driver,12
+Property Manager,12
+Director,13
+English Teacher,13
+Painter,13
+Pharmacy Technician,13
+Plumber,13
+Security,13
+Welder,13
+Bartender,14
+Business Owner,14
+LPN,14
+None,14
+Realtor,14
+Sales Representative,14
+Self Employed,14
+Soldier,14
+Aircraft Mechanic,15
+Custodian,15
+Customer Service Rep,15
+Operator,15
+Pilot,15
+Police Officer,15
+Respiratory Therapist,15
+Software Developer,15
+Owner Operator,16
+Physician,16
+Vice President,16
+Chef,17
+Caregiver,19
+Customer Service,19
+Store Manager,19
+Carpenter,20
+Maintenance,20
+Operations Manager,20
+Owner/Operator,20
+Machinist,21
+Server,21
+Nurse,22
+CNA,23
+Consultant,23
+Delivery Driver,23
+Machine Operator,23
+Correctional Officer,24
+Sales Associate,24
+Sales Manager,24
+Disabled,25
+Cook,26
+CEO,30
+Technician,30
+Engineer,34
+Security Officer,34
+General Manager,35
+Mechanic,35
+Cashier,36
+Electrician,36
+Project Manager,42
+Sales,48
+Supervisor,48
+President,49
+N/A,55
+Cna,67
+Registered Nurse,67
+Manager,75
+Teacher,78
+Student,83
+Unemployed,111
+Driver,121
+Owner,159
+Truck Driver,173
+Retired,254
