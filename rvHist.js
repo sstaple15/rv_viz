@@ -168,7 +168,9 @@ function rvHist(data, axisName, title, plot, maxout) {
     .attr("y", height + margin.bottom/1.25)
     .attr("text-anchor", "end")
     .style("font-style", "italic")
-    .text("Source: RapidVisa")
+    .on("click", function() { window.open("https://rapidvisa.com/k1-visa-report/");
+    })
+    .html("Source: RapidVisa")
 
   g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",30).attr("r", 6).style("fill", "#38a25e")
   g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",60).attr("r", 6).style("fill", "#447d9c")

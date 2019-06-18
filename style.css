@@ -1,5 +1,5 @@
 body {
-	background-color: #ffffff !important;
+	background-color: #f0ffff !important;
 	color: #606060 !important;
 }
 
@@ -51,12 +51,13 @@ p {
 }
 
 .container-fluid {
-  padding-right: 100px;
-  padding-left: 100px;
-	padding-top: 25px;
+  padding-right: 250px;
+  padding-left: 250px;
+	padding-top: 25Px;
 	padding-bottom: 25px;
-  margin-right: auto;
-  margin-left: auto;
+	max-width:700px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 
@@ -67,7 +68,7 @@ p {
 .hovtip {
   font-family: 'Sarif';
   line-height: 1.25;
-  font-size: 14px;
+  font-size: 16px;
   padding: 6px;
   background: #fff;
   color: #38a25e;
@@ -88,7 +89,7 @@ p {
 
 text {
   fill: #000;
-  font-family: 'Sarif';
+  font-family: 'Sans';
 	font-size: 12px;
 }
 

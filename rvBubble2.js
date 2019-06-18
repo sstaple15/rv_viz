@@ -19,7 +19,9 @@ function rvBubble2(data, title, plot) {
     .attr("y", height + margin.bottom/5)
     .attr("text-anchor", "end")
     .style("font-style", "italic")
-    .text("Source: RapidVisa")
+    .on("click", function() { window.open("https://rapidvisa.com/k1-visa-report/");
+    })
+    .html("Source: RapidVisa")
 
   var padding = 1.5, // separation between same-color nodes
       clusterPadding = 6; // separation between different-color nodes

@@ -88,7 +88,9 @@ function rvChart3(data, axisName, title, plot) {
     .attr("y", height + margin.bottom/1.25)
     .attr("text-anchor", "end")
     .style("font-style", "italic")
-    .text("Source: US Citizenship and Immigration Services")
+    .on("click", function() { window.open("https://rapidvisa.com/k1-visa-report/");
+    })
+    .html("Source: US Citizenship and Immigration Services &copy; RapidVisa")
 
   //arrow
   g.append("g:defs").append("g:marker")

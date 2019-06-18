@@ -133,6 +133,8 @@ function rvHist2(data, axisName, title, plot, maxout) {
     .attr("y", height + margin.bottom/1.25)
     .attr("text-anchor", "end")
     .style("font-style", "italic")
-    .text("Source: RapidVisa")
+    .on("click", function() { window.open("https://rapidvisa.com/k1-visa-report/");
+    })
+    .html("Source: RapidVisa")
 
 };

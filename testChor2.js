@@ -22,7 +22,10 @@ function testChor2(data, us, title) {
     .attr("y", height + margin.bottom/5)
     .attr("text-anchor", "end")
     .style("font-style", "italic")
-    .text("Source: US Citizenship and Immigration Statistics")
+    .on("click", function() { window.open("https://rapidvisa.com/k1-visa-report/");
+    })
+    .html("Source: US Citizenship and Immigration Services &copy; RapidVisa")
+
 
   var featureCollection = topojson.feature(us, us.objects.states);
 

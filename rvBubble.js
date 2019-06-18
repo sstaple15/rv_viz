@@ -19,7 +19,9 @@ function rvBubble(data, title, plot) {
     .attr("y", height + margin.bottom/5)
     .attr("text-anchor", "end")
     .style("font-style", "italic")
-    .text("Source: US Citizenship and Immigration Statistics")
+    .on("click", function() { window.open("https://rapidvisa.com/k1-visa-report/");
+    })
+    .html("Source: US Citizenship and Immigration Statistics &copy; RapidVisa")
 
   var padding = 1.5, // separation between same-color nodes
       clusterPadding = 6; // separation between different-color nodes
@@ -105,7 +107,7 @@ function rvBubble(data, title, plot) {
 
   var simulation = d3.forceSimulation()
     // keep entire simulation balanced around screen center
-    .force('center', d3.forceCenter(width/2, height/2+50))
+    .force('center', d3.forceCenter(width/2, height/2+25))
 
     // pull toward center
     .force('attract', d3.forceAttract()
