@@ -59,13 +59,12 @@ p {
   margin-left: 100px;
 }
 
-
 .states {
   stroke-linejoin: round;
 }
 
 .hovtip {
-  font-family: 'Sarif';
+  font-family: sans-serif;
   line-height: 1.25;
   font-size: 16px;
   padding: 6px;
@@ -88,7 +87,7 @@ p {
 
 text {
   fill: #000;
-  font-family: 'Sans';
+  font-family: sans-serif;
 	font-size: 12px;
 }
 

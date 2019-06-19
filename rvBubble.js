@@ -12,6 +12,7 @@ function rvBubble(data, title, plot) {
     .attr("y", 0)
     .style("font-size", "16px")
     .style("font-weight", "bold")
+    .style("font-family", "sans-serif")
     .text(title)
 
   g.append("text")
@@ -19,6 +20,7 @@ function rvBubble(data, title, plot) {
     .attr("y", height + margin.bottom/5)
     .attr("text-anchor", "end")
     .style("font-style", "italic")
+    .style("font-family", "sans-serif")
     .on("click", function() { window.open("https://rapidvisa.com/k1-visa-report/");
     })
     .html("Source: US Citizenship and Immigration Statistics &copy; RapidVisa")
@@ -176,10 +178,10 @@ function rvBubble(data, title, plot) {
   g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",90).attr("r", 6).style("fill", "#f81128")
   g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",120).attr("r", 6).style("fill", "#f18721")
   g.append("circle").attr("cx", width-3.5*margin.right).attr("cy",150).attr("r", 6).style("fill", "#606060")
-  g.append("text").attr("x", width-3.5*margin.right+20).attr("y", 30).text("Africa").style("font-size", "14px").attr("alignment-baseline","middle")
-  g.append("text").attr("x", width-3.5*margin.right+20).attr("y", 60).text("Americas").style("font-size", "14px").attr("alignment-baseline","middle")
-  g.append("text").attr("x", width-3.5*margin.right+20).attr("y", 90).text("Asia").style("font-size", "14px").attr("alignment-baseline","middle")
-  g.append("text").attr("x", width-3.5*margin.right+20).attr("y", 120).text("Europe").style("font-size", "14px").attr("alignment-baseline","middle")
-  g.append("text").attr("x", width-3.5*margin.right+20).attr("y", 150).text("Oceania").style("font-size", "14px").attr("alignment-baseline","middle")
+  g.append("text").style("font-family", "sans-serif").attr("x", width-3.5*margin.right+20).attr("y", 30).text("Africa").style("font-size", "14px").attr("alignment-baseline","middle")
+  g.append("text").style("font-family", "sans-serif").attr("x", width-3.5*margin.right+20).attr("y", 60).text("Americas").style("font-size", "14px").attr("alignment-baseline","middle")
+  g.append("text").style("font-family", "sans-serif").attr("x", width-3.5*margin.right+20).attr("y", 90).text("Asia").style("font-size", "14px").attr("alignment-baseline","middle")
+  g.append("text").style("font-family", "sans-serif").attr("x", width-3.5*margin.right+20).attr("y", 120).text("Europe").style("font-size", "14px").attr("alignment-baseline","middle")
+  g.append("text").style("font-family", "sans-serif").attr("x", width-3.5*margin.right+20).attr("y", 150).text("Oceania").style("font-size", "14px").attr("alignment-baseline","middle")
 
 }
