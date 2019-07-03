@@ -99,7 +99,7 @@ function rvLine4(data, axisName, title, plot) {
     .attr("text-anchor", "begin")
     .style("font-weight", "bold")
     .attr("dy", "0em")
-    .text("Sponsor Median")
+    .text("Mean Approvals")
   // ...AND THIS NOTENOTENOTE
 
 
